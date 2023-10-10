@@ -574,10 +574,11 @@ footer {
 }
 
 @media (max-width: 470px) {
-    :root{
+    :root {
         --h1-fonte: 3rem;
         --h2-fonte: 2rem;
     }
+
     .about-img img {
         text-align: center;
         width: 100%;

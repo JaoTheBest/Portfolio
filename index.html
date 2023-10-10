@@ -9,7 +9,10 @@
     <!-- BOX ICONS LINK -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- REMIX ICONS LINK -->
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 
@@ -36,7 +39,7 @@
     <!-- Seção Home -->
 
     <section class="hero" id="home">
-        <div class="main-content">
+        <div class="main-content" data-aos="fade-in">
             <h4>Olá!</h4>
             <h1>Eu sou <span>Joao Victor</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore blanditiis quasi corrupti nisi.
@@ -59,11 +62,11 @@
 
     <!-- Seção Sobre -->
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in-down">
             <img src="Imagens/Sobre.png" alt="">
         </div>
 
-        <div class="about-text">
+        <div class="about-text" data-aos="zoom-in-up">
             <h2>Desenvolvedor <span>Web</span> <br> & Web Designer</h2>
 
             <div class="exp-area">
@@ -94,11 +97,11 @@
 
     <!-- Seção Serviço -->
     <section class="service" id="services">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>Meus <span>Serviços</span></h2>
         </div>
 
-        <div class="services-content">
+        <div class="services-content" data-aos="zoom-in-up">
             <div class="box">
                 <img src="Imagens/s-1.svg" alt="">
                 <h3>Flyers Designers</h3>
@@ -134,11 +137,11 @@
 
     <!-- Seção Portfolio -->
     <section class="portfolio" id="portfolio">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>Meu <span>Portfolio</span></h2>
         </div>
 
-        <div class="portfolio-content">
+        <div class="portfolio-content" data-aos="zoom-in-up">
             <div class="row">
                 <img src="Imagens/port-1.jpg" alt="">
                 <div class="main-row">
@@ -222,16 +225,16 @@
     <!-- Seção Contato -->
 
     <section class="contact" id="contact">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-up">
             <h2>Contato</h2>
         </div>
 
-        <div class="contact-form">
+        <div class="contact-form" data-aos="zoom-in">
             <form action="">
                 <input type="text" placeholder="Digite seu nome:" required>
                 <input type="email" placeholder="Digite seu email:" required>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Mande sua Mensagem" required></textarea>
-                <input type="submit" name="" value="Enviar" class="send-btn"> 
+                <input type="submit" name="" value="Enviar" class="send-btn">
             </form>
         </div>
     </section>
@@ -249,6 +252,14 @@
     </footer>
     <!-- javascript Link -->
     <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400,
+        });
+    </script>
 </body>
 
 </html>
